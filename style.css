@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.homeHeader{
+    background-color: rgba(0, 0, 0, 0.738);
+    background: /* top, transparent black, faked with gradient */ linear-gradient(
+        rgba(0, 0, 0, 0.473),
+        rgba(0, 0, 0, 0.781)
+      ),
+      /* bottom, image */
+    url("image/hero.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.headerUl, .FooterUl, .OpacityMenu{
+    list-style-type: none;
+    display: flex;
+}
+
+.OpacityMenu{
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+li{
+    margin: 10px;
+    margin-right: 100px;
+}
+
+.max-width{
+    max-width: 1330px;
+    margin: 0 auto;   
+}
+
+#homeHeaderLogo{
+    max-width: 30%;
+}
+
+.HeaderTextH1{
+    color: white;
+}
+
+button{
+    font-size: 15px;
+    padding: 8px;
+    margin: 5px;
+    color: orange;
+    background-color: rgba(255, 166, 0, 0);
+    border-radius: 20px;
+    border: solid 1px ;
+}
+
+.homeHeaderDown{
+    margin-top: 100px;
+    margin-left: 11.5%;
+}
+
+.homeLinkA:hover{
+    box-shadow: 0 3px yellow;
+    color: orange;
+}
+
+.headerBtn:hover{
+    color: white;
+    background-color: orange;
+}
+
+.homeInfor{
+    margin-top: 30px;
+}
+
+.homeInforDown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 10%;
+    padding-bottom: 5%;
+}
+
+.homeInforUp, .homeDownloadUp, .homeLocationUp, .homePriceUp, .homeFBUp{
+    text-align: center;
+}
+
+
+.categoryInfor{
+    margin: 30px;
+}
+.InforTitle{
+    margin: 10px 0;
+    color: orange;
+}
+
+.fal{
+    max-width: 80px;
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.InforUpLine, .downloadrUpLine, .locationUpLine, .priceUpLine, .fbUpLine{
+    color: orange;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/*Home Banner*/
+
+.homeBanner {
+    width: 100%;
+    margin-top: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+
+.homeBanner .bannerImg {
+    width: 25%;
+    height: 275x;
+    z-index: 1;
+}
+
+.homeBanner .bannerImg img {
+    width: 100%;
+    height: 275px;
+    border: none;
+    display: block;
+    z-index: 1;
+}
+
+/*Download*/
+.homeDownload, .homePrice{
+    padding: 30px;
+    background-color: rgb(237, 237, 237);
+}
+
+.downloadDownImg img{
+    width: 200px;
+}
+
+.homeDownloadDown{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 300px;
+}
+
+.downloadLogo{
+    max-height: 40px;
+}
+
+.download{
+    margin-top: 30px;
+}
+
+.downloadDownStep p{
+    width: 650px;
+    font-size: 30px;
+    display: flex;
+    margin-left: 10px;
+}
+
+.downloadDownStep{
+    display: flex;
+    margin-top: 30px;
+}
+
+.downloadrDownDec{
+    margin-left: 100px;
+}
+
+/*Location*/
+.homeLocation{
+    margin: 50px;
+}
+.homeLocationDown{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.location{
+    width: 25%;
+    margin: 0 20px;
+}
+
+.imgLocation{
+    width: 100%;
+    margin: 0;
+}
+
+.locationA {
+    color: orange;
+    text-decoration: underline;
+}
+
+.location ul li{
+    display: flex;
+}
+
+.locationLogo{
+    min-height: 10px;
+    height: 20px;
+}
+
+/*Price*/
+.homePriceDown{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 10%;
+}
+
+.bodyLine, .money{
+    display: flex;
+}
+
+.money{
+    color: orange;
+}
+
+.money h2{
+    font-size: 40px;
+}
+
+.homePrice{
+    padding: 100px;
+}
+
+.priceHeader, .priceBody, .priceBtn{
+    padding: 20px;
+    border: solid 1pt rgb(237, 237, 237);
+}
+
+.priceBtn{
+    text-align: center;
+}
+
+.price{
+    background-color: white;
+    border-radius: 8px;
+    width: 28%;
+}
+
+.bodyLine img{
+    min-height: 10px;
+    height: 20px;
+}
+
+.priceBtn button:hover{
+    color: white;
+    background-color: orange;
+}
+
+
+/*Feedback*/
+
+.homeFeedback{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px;
+}
+
+/*.feedback{
+    display: flex;
+}
+
+.check-box{
+    display: flex;
+}
+
+#check{
+    margin: 0 1px;
+}
+
+.input-area input, select, .input-area textarea{
+    min-width: 80%;
+    width: 80%;
+} */
+
+.feedback-form {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    margin: 0;
+    font-size: 35px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/* form user info  */
+
+form {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form .label-area {
+    width: 100%;
+    margin: 0 20px;
+}
+
+form .label-area p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 40px;
+}
+
+form .input-area {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.input-area input {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.input-area select {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.input-area .check-box {
+    display: flex;
+}
+
+.input-area .check-box p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+    margin-left: 10px;
+    display: block;
+    text-align: start
+}
+
+.input-area button {
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.input-area button:hover{
+    color: orange;
+    background-color: white;
+    border: solid 1px orange;
+}
+
+/*Footer*/
+.homeFooter{
+    background-color: rgb(60, 60, 60);
+    color: rgb(239, 239, 239);
+}
+
+.footerDec{
+    padding: 50px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footerSocial{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fab{
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+.FooterUl li{
+    margin: 10px;
+}
