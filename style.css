@@ -213,6 +213,11 @@ button {
 
 .fa-star {
     padding-top: 20px;
+    transition: width 2s, height 2s, transform 8s;
+}
+
+.fa-star:hover {
+    transform: rotate(3600deg);
 }
 
 /*Location*/
