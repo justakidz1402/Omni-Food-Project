@@ -143,6 +143,8 @@ button{
     width: 25%;
     height: 275x;
     z-index: 1;
+    opacity: 0.5;
+    filter: grayscale(20%)
 }
 
 .homeBanner .bannerImg img {
