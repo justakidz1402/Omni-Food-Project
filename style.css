@@ -11,14 +11,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.homeHeader{
+.homeHeader {
     background-color: rgba(0, 0, 0, 0.738);
-    background: /* top, transparent black, faked with gradient */ linear-gradient(
-        rgba(0, 0, 0, 0.473),
-        rgba(0, 0, 0, 0.781)
-      ),
-      /* bottom, image */
-    url("image/hero.jpg");
+    background:
+        /* top, transparent black, faked with gradient */
+        linear-gradient(rgba(0, 0, 0, 0.473),
+            rgba(0, 0, 0, 0.781)),
+        /* bottom, image */
+        url("image/hero.jpg");
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,69 +30,78 @@ a {
     text-decoration: none;
 }
 
-.headerUl, .FooterUl, .OpacityMenu{
+.headerUl, .FooterUl, .OpacityMenu {
     list-style-type: none;
     display: flex;
 }
 
-.OpacityMenu{
+.OpacityMenu {
     justify-content: space-between;
     padding-top: 60px;
     padding-bottom: 20px;
 }
 
-li{
+li {
     margin: 10px;
     margin-right: 100px;
 }
 
-.max-width{
+.max-width {
     max-width: 1330px;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
 
-#homeHeaderLogo{
+#homeHeaderLogo {
     max-width: 30%;
 }
 
-.HeaderTextH1{
+.HeaderTextH1 {
     color: white;
 }
 
-.homeHeaderBtn{
+.homeHeaderBtn {
     padding-top: 20px;
 }
 
-button{
+.headerUl li {
+    display: inline-block;
+}
+
+.headerUl li:hover {
+    transition: all .4s ease-in-out;
+    transform: scale(1.1);
+}
+
+button {
     font-size: 15px;
     padding: 8px;
     margin: 5px;
     color: orange;
     background-color: rgba(255, 166, 0, 0);
     border-radius: 20px;
-    border: solid 1px ;
+    border: solid 1px;
 }
 
-.homeHeaderDown{
+.homeHeaderDown {
     margin-top: 100px;
     margin-left: 11.5%;
 }
 
-.homeLinkA:hover{
+.homeLinkA:hover {
     box-shadow: 0 3px yellow;
     color: orange;
 }
 
-.headerBtn:hover{
+.headerBtn:hover {
     color: white;
     background-color: orange;
 }
 
-.homeInfor{
+.homeInfor {
     margin-top: 30px;
 }
 
-.homeInforDown{
+.homeInforDown {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,29 +109,30 @@ button{
     padding-bottom: 5%;
 }
 
-.homeInforUp, .homeDownloadUp, .homeLocationUp, .homePriceUp, .homeFBUp{
+.homeInforUp, .homeDownloadUp, .homeLocationUp, .homePriceUp, .homeFBUp {
     text-align: center;
     margin-top: 50px;
 }
 
 
-.categoryInfor{
+.categoryInfor {
     margin: 30px;
 }
-.InforTitle{
+
+.InforTitle {
     margin: 10px 0;
     color: orange;
     font-weight: bold;
 }
 
-.fal{
+.fal {
     max-width: 80px;
     color: orange;
     font-size: 30px;
     font-weight: bold;
 }
 
-.InforUpLine, .downloadrUpLine, .locationUpLine, .priceUpLine, .fbUpLine{
+.InforUpLine, .downloadrUpLine, .locationUpLine, .priceUpLine, .fbUpLine {
     color: orange;
     font-weight: bold;
     font-size: 30px;
@@ -130,84 +140,99 @@ button{
 }
 
 /*Home Banner*/
-.homeBanner{
-    margin-bottom: 30px;
+.homeBanner {
     position: relative;
+    background-color: rgb(237, 237, 237);
+    overflow: hidden;
 }
 
-.bannerImg{
+.bannerImg {
     width: 25%;
+    height: 275px;
+    overflow: hidden;
     float: left;
     margin: 0;
-    height: 275x;
+}
+
+.bannerImg img {
+    width: 100%;
+    height: 275px;
     z-index: 1;
     filter: brightness(0.5);
+    overflow: hidden;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.bannerImg img:hover {
+    transform: scale(1.2);
+    overflow: hidden;
 }
 
 /*Download*/
-.homeDownloadUp h1{
-    padding-top: 100px;
-}
-
-.homeDownload, .homePrice{
+.homeDownload, .homePrice {
     padding: 30px;
     background-color: rgb(237, 237, 237);
 }
 
-.downloadDownImg img{
+.downloadDownImg img {
     width: 200px;
 }
 
-.homeDownloadDown{
+.homeDownloadDown {
     display: flex;
     justify-content: space-around;
     margin: 30px 300px;
 }
 
-.downloadLogo{
+.downloadLogo {
     max-height: 40px;
 }
 
-.download{
+.download {
     margin-top: 30px;
 }
 
-.downloadDownStep p{
+.downloadDownStep p {
     width: 650px;
     font-size: 30px;
     display: flex;
     margin-left: 10px;
 }
 
-.downloadDownStep{
+.downloadDownStep {
     display: flex;
     margin-top: 30px;
 }
 
-.downloadrDownDec{
+.downloadrDownDec {
     margin-left: 100px;
 }
 
-.fa-star{
+.fa-star {
     padding-top: 20px;
 }
+
 /*Location*/
-.homeLocation{
+.homeLocation {
     margin: 50px;
 }
-.homeLocationDown{
+
+.homeLocationDown {
     display: flex;
     justify-content: space-between;
     text-align: center;
     margin: 50px auto;
 }
 
-.location{
+.location {
     width: 25%;
     margin: 0 20px;
 }
 
-.imgLocation{
+.imgLocation {
     width: 100%;
     margin: 0;
 }
@@ -217,69 +242,70 @@ button{
     text-decoration: underline;
 }
 
-.location ul li{
+.location ul li {
     display: flex;
 }
 
-.location ul li p{
+.location ul li p {
     font-weight: 600;
     padding-left: 5px;
+    margin-top: 2.5px;
 }
 
-.locationLogo{
+.locationLogo {
     min-height: 10px;
     height: 20px;
 }
 
 /*Price*/
-.homePriceDown{
+.homePriceDown {
     display: flex;
     justify-content: space-around;
     margin: 30px 10%;
 }
 
-.bodyLine, .money{
+.bodyLine, .money {
     display: flex;
 }
 
-.money{
+.money {
     color: orange;
 }
 
-.money h2{
+.money h2 {
     font-size: 40px;
 }
 
-.homePrice{
+.homePrice {
     padding: 100px;
 }
 
-.priceHeader, .priceBody, .priceBtn{
+.priceHeader, .priceBody, .priceBtn {
     padding: 20px;
     border: solid 1pt rgb(237, 237, 237);
 }
 
-.priceBtn{
+.priceBtn {
     text-align: center;
 }
 
-.price{
+.price {
     background-color: white;
     border-radius: 8px;
     width: 28%;
 }
 
-.bodyLine img{
+.bodyLine img {
     min-height: 10px;
     height: 20px;
 }
 
-.priceBtn button:hover{
+.priceBtn button:hover {
     color: white;
     background-color: orange;
 }
 
-.money p{
+.money p {
     padding-top: 23px;
 }
 
@@ -288,7 +314,16 @@ button{
 .homeFeedback{
     display: flex;
     justify-content: space-around;
-    margin: 80px;
+    margin: 50px;
+}
+
+#h2TY {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    color: orange;
+    font-weight: 1000px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .feedback-form {
@@ -369,35 +404,35 @@ form .input-area {
     cursor: pointer;
 }
 
-.input-area button:hover{
+.input-area button:hover {
     color: orange;
     background-color: white;
     border: solid 1px orange;
 }
 
 /*Footer*/
-.homeFooter{
+.homeFooter {
     background-color: rgb(60, 60, 60);
     color: rgb(239, 239, 239);
 }
 
-.footerDec{
+.footerDec {
     padding: 50px;
     text-align: center;
     font-size: 12px;
 }
 
-.footerSocial{
+.footerSocial {
     padding: 30px;
     display: flex;
     justify-content: space-around;
 }
 
-.fab{
+.fab {
     font-size: 30px;
     margin: 0 20px;
 }
 
-.FooterUl li{
+.FooterUl li {
     margin: 10px;
 }
