@@ -300,6 +300,10 @@ button {
     height: 20px;
 }
 
+.bodyLine p{
+    margin-left: 5px;
+}
+
 .priceBtn button:hover {
     color: white;
     background-color: orange;
