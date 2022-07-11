@@ -189,6 +189,9 @@ button{
     margin-left: 100px;
 }
 
+.fa-star{
+    padding-top: 20px;
+}
 /*Location*/
 .homeLocation{
     margin: 50px;
