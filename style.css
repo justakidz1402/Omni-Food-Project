@@ -59,6 +59,10 @@ li{
     color: white;
 }
 
+.homeHeaderBtn{
+    padding-top: 20px;
+}
+
 button{
     font-size: 15px;
     padding: 8px;
