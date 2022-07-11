@@ -309,6 +309,18 @@ button {
     padding-top: 23px;
 }
 
+.homePriceSUS{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#h2SU{
+    color: orange;
+    font-weight: 1000px;
+    font-family: 'Oswald', sans-serif;
+}
+
 /*Feedback*/
 
 .homeFeedback{
@@ -317,7 +329,7 @@ button {
     margin: 50px;
 }
 
-#h2TY {
+#h2TY{
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
