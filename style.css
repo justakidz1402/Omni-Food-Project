@@ -117,6 +117,7 @@ button {
 
 .categoryInfor {
     margin: 30px;
+    width: 20%;
 }
 
 .InforTitle {
@@ -310,6 +311,11 @@ button {
 }
 
 .priceBtn button:hover {
+    color: white;
+    background-color: orange;
+}
+
+.slick-prev:hover {
     color: white;
     background-color: orange;
 }
