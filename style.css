@@ -343,6 +343,7 @@ form .input-area {
     width: 90%;
     color: orange;
     font-weight: bold;
+    margin: 5px;
 }
 
 .input-area input {
