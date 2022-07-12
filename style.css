@@ -303,9 +303,22 @@ button {
              -24px -24px 44px #ffffff;
 }
 
+.price:hover {
+    transition: all .4s ease-in-out;
+    transform: scale(1.1);
+}
+
 .bodyLine img {
     min-height: 10px;
     height: 20px;
+}
+
+.bodyLine svg {
+    min-height: 10px;
+    height: 18px;
+    color: orange;
+    fill: currentColor;
+    stroke: currentColor;
 }
 
 .bodyLine p{
@@ -468,4 +481,51 @@ form .input-area {
 
 .FooterUl li {
     margin: 10px;
+}
+
+/* Customer Feedback */
+.homeCustomer{
+    background-color: rgba(0, 0, 0, 0.738);
+    background:
+        /* top, transparent black, faked with gradient */
+        linear-gradient(rgba(0, 0, 0, 0.751),
+            rgba(0, 0, 0, 0.751)),
+        /* bottom, image */
+        url("image/back-customers.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+}
+
+.homeCustomerDown{
+    display: flex;
+    justify-content: center;
+    margin: 50px 10%;
+}
+
+.cfb p{
+    color: white;
+    font-style: italic;
+}
+
+.cfb {
+    margin: 30px;
+    width: 40%;
+}
+
+.customer {
+    display: flex;
+    margin-top: 30px;
+}
+
+.customer img{
+    width: 10%;
+    vertical-align: middle;
+    -webkit-border-radius: 50%;
+}
+
+.customer p{
+    margin-left: 10px;
+    padding-top: 5px;
 }
