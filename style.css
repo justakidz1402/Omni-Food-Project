@@ -178,6 +178,10 @@ button {
     background-color: rgb(237, 237, 237);
 }
 
+.homeDownload{
+    overflow: hidden;
+}
+
 .downloadDownImg img {
     width: 200px;
 }
@@ -219,6 +223,22 @@ button {
 
 .fa-star:hover {
     transform: rotate(3600deg);
+}
+
+/* .animate__animated, .animate__slideInUp {
+    --animate-duration: 3s;
+  } */
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /*Location*/
@@ -496,6 +516,10 @@ form .input-area {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 30px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .homeCustomerDown{
