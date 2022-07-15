@@ -221,7 +221,7 @@ button {
     transition: width 2s, height 2s, transform 8s;
 }
 
-.fa-star:hover {
+.downloadDownStep:hover .fa-star{
     transform: rotate(3600deg);
 }
 
